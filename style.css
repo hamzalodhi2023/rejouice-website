@@ -12,12 +12,31 @@
   box-sizing: border-box;
   font-family: "NB";
 }
-
+/*? Page 1 Started */
 #page1 {
   height: 100vh;
   width: 100%;
   background-color: #dadada;
   position: relative;
+}
+
+#cursor {
+  height: 7.5vw;
+  width: 7.5vw;
+  background-color: #ff5f38;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cursor h5 {
+  font-size: 1.15vw;
+  font-weight: 500;
 }
 
 #page1 video {
@@ -33,6 +52,7 @@
 
   position: relative;
   color: #fff;
+  z-index: 10;
 
   display: flex;
   align-items: center;
@@ -58,4 +78,21 @@ nav h3 {
 nav h4 {
   font-size: 1.4vw;
   font-weight: 100;
+}
+
+#page1-content h1 {
+  width: 100%;
+  font-family: "RH";
+  font-size: 27vw;
+  font-weight: 100;
+  line-height: 27vw;
+  user-select: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page1-content h1 span {
+  font-family: "RH";
 }
